@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class List : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
+public class Dropzone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public void OnPointerEnter(PointerEventData eventData){
         Debug.Log("OnPointerEnter");
