@@ -10,6 +10,6 @@ public class Card : MonoBehaviour
     // Get CardTitle child object
     // Get Text Component of the above
     void Update(){
-        transform.Find("Title").gameObject.GetComponent<Text>().text = title;
+        //this.transform.Find("Title").gameObject.GetComponent<Text>().text = title;
     }
 }
