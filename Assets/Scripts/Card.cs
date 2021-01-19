@@ -6,10 +6,4 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour
 {
     public string title = "Some Task";
-
-    // Get CardTitle child object
-    // Get Text Component of the above
-    void Update(){
-        //this.transform.Find("Title").gameObject.GetComponent<Text>().text = title;
-    }
 }

@@ -7,12 +7,11 @@ public class Button : MonoBehaviour
 {
     public GameObject TodoCanvas;
     public GameObject CardPrefab;
-    public void OnPointerClick(PointerEventData pointerEventData)
+    public void OnPointerClick()
     {
-        //GameObject newCard = Instantiate(CardPrefab);
-        //Card card = newCard.GetComponent<Card>;
-        //newCard.transform.Find("Title").gameObject.GetComponent<Text>().text = "Click to add";
-        //newCard.transform.SetParent(TodoCanvas.transform);
-        Debug.Log("Added new event");
+        GameObject newCard = Instantiate(CardPrefab);
+        //Debug.Log("Created new card");
+        newCard.transform.SetParent(TodoCanvas.transform);
+        newCard.transform.localScale = new Vector3(1,1,1);
     }
 }
